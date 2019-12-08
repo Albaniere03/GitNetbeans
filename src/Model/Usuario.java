@@ -16,10 +16,11 @@ public class Usuario extends Pessoa {
         this.senha=senha;
     }
 
-    public Usuario(String level, String senha, int id, String nome, char sexo, Date nasc, String telefone, String email, String rg) {
+    public Usuario(String level, String senha, int id, String nome, char sexo, String nasc, String telefone, String email, String rg) {
         super(id, nome, sexo, nasc, telefone, email, rg);
         this.level = level;
         this.senha = senha;
+        
     }
 
     public String getLevel() {
