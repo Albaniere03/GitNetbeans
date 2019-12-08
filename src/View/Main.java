@@ -6,6 +6,7 @@
 package View;
 
 import Model.Cliente;
+import Model.Pessoa;
 import Model.Servico;
 import Model.Usuario;
 
@@ -21,9 +22,10 @@ public class Main {
         Servico barba = new Servico(5, "barba", 35);
         barba.setDescricao("cabelo");
         System.out.println(barba.getDescricao());
-        Cliente cliente=new Cliente(1, "Lucas", "355245", "Rua 9");
-        System.out.println(cliente);
-        Usuario usuario = new Usuario(1, "barbeiro", "senha");
-        System.out.println(usuario);
+        Cliente cliente=new Cliente(1,"Lucas","Rua nova","55264");
+        System.out.println(cliente.getNome());
+        Usuario usuario = new Usuario(1, "barbeiro", "1234");
+        System.out.println(usuario.getNome());
+            
     }
 }
